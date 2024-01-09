@@ -98,7 +98,6 @@ section:nth-child(2) {
 .row {
     display: flex;
     flex-direction: column;
-    border: solid red 1px;
 
 }
 
@@ -265,7 +264,7 @@ footer p {
         height: 400px;
     }
 
-    .container .row-app:first-child .app {
+    .side {
         height: 600px;
     }
 
@@ -312,6 +311,58 @@ footer p {
         width: 100%;
         height: 500px;
         padding-left: 60px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .large-app {
+        flex-direction: row;
+        height: 340px;
+    }
+
+    .large-app .text {
+        height: 100%;
+    }
+
+    .large-app .image {
+        height: 100%;
+    }
+
+    .container .row-app:first-child .app {
+        height: 340px;
+    }
+
+    .row {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        padding: 0 100px;
+    }
+
+    .small {
+        height: 545px;
+    }
+
+    .benefits div {
+        width: calc(100% / 3 - 30px);
+        margin: 15px;
     }
 
 
