@@ -48,10 +48,6 @@ ul {
     padding: 65px 30px;
 }
 
-.row-app {
-    gap: 10px;
-}
-
 .app {
     display: flex;
     flex-direction: column;
@@ -132,4 +128,91 @@ h2 {
     margin: 30px 0;
 
     background-color: aquamarine;
+}
+
+
+section:nth-child(4) {
+    background-color: #9792e4;
+}
+
+section:nth-child(4) .container h2 {
+    padding-top: 0;
+    padding-bottom: 70px;
+    text-align: center;
+    color: white;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits div {
+    width: 100%;
+    height: 395px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+
+
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us div p {
+    line-height: 2em;
+    padding-bottom: 60px;
+    text-align: left;
+}
+
+
+.quote {
+    height: 416px;
+}
+
+
+
+
+section:nth-child(6) {
+    background-color: #9792e4;
+}
+
+.start {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.start div {
+    padding: 40px 50px;
+}
+
+.start h2 {
+    padding: 0 50px;
+}
+
+.start h1 {
+    padding: 40px 0;
+}
+
+.start input {
+    padding: 20px 70px;
+    margin: 38px 0;
+}
+
+.start .copyright {
+    padding: 0;
+}
+
+
+footer {
+    background-color: #333333;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 35px 30px;
 }
