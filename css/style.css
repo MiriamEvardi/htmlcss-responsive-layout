@@ -48,10 +48,17 @@ ul {
     padding: 65px 30px;
 }
 
+.row-app {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .app {
     display: flex;
     flex-direction: column;
-    min-width: calc(100% / 3 - 24px);
+    width: 100%;
+
     height: 400px;
     margin-bottom: 24px;
 
@@ -129,6 +136,16 @@ h2 {
 
     background-color: aquamarine;
 }
+
+.box .pic {
+    height: 40%;
+}
+
+.box .text {
+    height: 60%;
+}
+
+
 
 
 section:nth-child(4) {
@@ -215,4 +232,87 @@ footer p {
     color: white;
     text-align: center;
     padding: 35px 30px;
+}
+
+
+
+
+/*tablet*/
+@media screen and (min-width:768px) {
+
+    section:nth-of-type(1) .container {
+        padding-right: 6px;
+    }
+
+    .row-app {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .large-app {
+        width: calc((100% / 3 * 2) - 24px);
+
+        margin-bottom: 0;
+        height: 600px;
+    }
+
+    .app {
+        width: calc(100% /3 - 24px);
+        margin-bottom: 24px;
+
+
+        height: 400px;
+    }
+
+    .container .row-app:first-child .app {
+        height: 600px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        height: 276px;
+    }
+
+    .box .pic {
+        width: 40%;
+        height: auto;
+    }
+
+    .box .text {
+        width: 60%;
+        height: auto;
+    }
+
+    .benefits {
+
+        display: flex;
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+    .benefits div {
+        width: calc(50% - 30px);
+        margin: 15px;
+    }
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us>div {
+        height: 800px;
+        width: auto;
+
+    }
+
+    .about-us .quote {
+        width: 100%;
+        height: 500px;
+        padding-left: 60px;
+    }
+
+
 }
