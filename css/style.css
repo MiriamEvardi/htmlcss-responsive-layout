@@ -55,6 +55,7 @@ p {
     font-size: 14px;
     font-weight: 600;
     color: #5a6e7f;
+    line-height: 1.8em;
 }
 
 
@@ -106,7 +107,7 @@ p {
 .large-app .text p {
     text-align: left;
     padding: 0 32px;
-    line-height: 1.8em;
+
 
 }
 
@@ -136,16 +137,34 @@ button {
 
 .app p {
     padding: 0 30px;
-    line-height: 1.8em;
+
 }
 
 
 
 
+
+/* Strategic planning */
+
 section:nth-child(2) {
-    /*test*/
     height: auto;
     background-color: #9792e4;
+}
+
+.inner .image img {
+    height: 90%;
+    width: 100%;
+}
+
+.inner .text h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.inner .text p {
+    text-align: left;
+    color: white;
+
 }
 
 .row {
@@ -155,14 +174,41 @@ section:nth-child(2) {
 }
 
 .inner {
-    border: solid green 1px;
     display: flex;
     flex-direction: column;
     min-width: calc(100% / 2);
-    height: 700px;
-
+    height: auto;
 }
 
+.small {
+    padding: 20px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.small .text h3 {
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.small .text p {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fa-arrow-down {
+    font-size: 15px;
+    background-color: #9792e4;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* Testimonials */
 
 .container>div {
     text-align: center;
@@ -232,7 +278,6 @@ section:nth-child(4) .container h2 {
 }
 
 .about-us div p {
-    line-height: 2em;
     padding-bottom: 60px;
     text-align: left;
 }
