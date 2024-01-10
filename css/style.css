@@ -36,10 +36,22 @@ ul {
     display: flex;
     list-style-type: none;
 
-    gap: 10px;
+    gap: 15px;
     margin-left: auto;
+    align-items: center;
 
     display: none;
+}
+
+li {
+    color: white;
+}
+
+li input {
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
 }
 
 
@@ -677,34 +689,79 @@ footer p a {
         margin-right: auto;
     }
 
+
+    /* features */
     .large-app {
         flex-direction: row;
-        height: 340px;
+        height: auto;
     }
 
-    .large-app .text {
-        height: 100%;
+    .text,
+    .image {
+        width: 50%;
+        height: 350px;
+    }
+
+    .large-app .text button {
+        margin-left: 30px;
     }
 
     .large-app .image {
-        height: 100%;
+        margin-top: auto;
+        margin-left: 10px;
     }
 
-    .container .row-app:first-child .app {
-        height: 340px;
+    .large-app .image img {
+        margin-top: 70px;
+        height: 80%;
     }
+
+    .side {
+        height: auto;
+    }
+
+
+    /* strategic planning */
+    .inner:first-child .image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .inner .image {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .inner .text {
+        width: 70%;
+    }
+
+    .small {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        height: 600px;
+
+    }
+
+
+
+
+    .container .row-app:first-child .app {}
 
     .row {
         flex-direction: row;
-        align-items: flex-end;
         justify-content: space-between;
 
         padding: 0 100px;
     }
 
-    .small {
-        height: 545px;
-    }
+
+
+
+
 
     .benefits div {
         width: calc(100% / 3 - 30px);
