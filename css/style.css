@@ -35,8 +35,10 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
+
     gap: 10px;
     margin-left: auto;
+
     display: none;
 }
 
@@ -56,8 +58,10 @@ p {
     font-weight: 600;
     color: #5a6e7f;
     line-height: 1.8em;
+
     padding-bottom: 20px;
 }
+
 
 
 /* features + download */
@@ -70,7 +74,6 @@ p {
     display: flex;
     flex-direction: column;
 
-
     height: auto;
     margin-bottom: 24px;
 
@@ -80,11 +83,10 @@ p {
 
 .large-app {
     min-width: calc((100% / 3 * 2) - 24px);
+    height: 600px;
+
     margin-bottom: 24px;
 
-
-    /*test*/
-    height: 600px;
     background-color: #b5ddff;
     border-radius: 20px;
 
@@ -94,22 +96,22 @@ p {
 
 .text,
 .image {
-    width: 100%;
     height: 50%;
 }
 
 .large-app .text h2 {
     text-align: left;
-    padding: 20px 30px;
     font-size: 20px;
+
+    padding: 20px 30px;
+
     color: #0084fd;
 }
 
 .large-app .text p {
     text-align: left;
+
     padding: 0 30px;
-
-
 }
 
 .large-app .image img {
@@ -119,31 +121,34 @@ p {
 button {
     margin-top: 30px;
     padding: 12px 50px;
+
     background-color: #0084fd;
     color: white;
+
     border: none;
     border-radius: 20px;
 }
 
 .app i {
     padding-top: 30px;
+
     font-size: 80px;
+
     color: #0084fd;
 }
 
 .app h2 {
     font-size: 20px;
+
     padding: 30px 0;
+
     color: #0084fd;
 }
 
 .app p {
     padding: 0 30px;
     padding-bottom: 20px;
-
 }
-
-
 
 
 
@@ -151,6 +156,7 @@ button {
 
 section:nth-child(2) {
     height: auto;
+
     background-color: #9792e4;
 }
 
@@ -161,32 +167,36 @@ section:nth-child(2) {
 
 .inner .text h2 {
     padding: 35px 0;
+
     font-size: 30px;
+
     color: white;
 }
 
 .inner .text p {
     text-align: left;
-    color: white;
 
+    color: white;
 }
 
 .row {
     display: flex;
     flex-direction: column;
-
 }
 
 .inner {
     display: flex;
     flex-direction: column;
+
     min-width: calc(100% / 2);
     height: auto;
 }
 
 .small {
     padding: 20px;
+
     background-color: white;
+
     border-radius: 40px;
 }
 
@@ -197,18 +207,20 @@ section:nth-child(2) {
 
 .small .text p {
     color: black;
+
     text-align: center;
+
     padding: 20px 0;
 }
 
 .fa-arrow-down {
     font-size: 15px;
+
     background-color: #9792e4;
+
     padding: 10px;
     border-radius: 50%;
 }
-
-
 
 
 
@@ -216,17 +228,19 @@ section:nth-child(2) {
 
 .container>div {
     text-align: center;
-
 }
 
 h1 {
     color: #9792e4;
+
     padding: 35px 0;
+
     font-size: 28px;
 }
 
 .container .testimonials p {
     color: black;
+
     font-weight: 400;
     font-size: 16px;
 }
@@ -235,13 +249,12 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     padding-top: 30px;
     border-radius: 40px;
-
-    /*test*/
-    height: auto;
-
     margin: 30px 0;
+
+    height: auto;
 
     background-color: #9792e4;
 }
@@ -249,13 +262,12 @@ h1 {
 .box .pic {
     height: 180px;
     width: 180px;
-    border-radius: 50%;
-
 }
 
 .box .pic img {
     width: 100%;
     height: 100%;
+
     border-radius: 50%;
 
     object-fit: cover;
@@ -263,27 +275,30 @@ h1 {
 
 .box .text {
     height: 60%;
-    padding-top: 30px;
 
+    padding-top: 30px;
 }
 
 .box .text p {
     font-weight: 400;
     font-size: 16px;
+
     color: white;
+
     padding: 0 15px;
 }
 
 .name {
     padding: 20px;
+
     font-weight: 700;
+
     color: white;
 }
 
 
 
-
-
+/* Benefits */
 section:nth-child(4) {
     background-color: #9792e4;
 }
@@ -291,7 +306,9 @@ section:nth-child(4) {
 section:nth-child(4) .container h2 {
     padding-top: 0;
     padding-bottom: 70px;
+
     text-align: center;
+
     color: white;
 }
 
@@ -300,73 +317,192 @@ section:nth-child(4) .container h2 {
     flex-direction: column;
 }
 
-.benefits div {
+.benefits-container {
+    text-align: left;
+
     width: 100%;
-    height: 395px;
-    background-color: white;
+
+    padding: 20px;
     margin-bottom: 30px;
+    border-radius: 15px;
+
+    background-color: white;
+}
+
+.number {
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #9792e4;
+}
+
+.benefits-container h3 {
+    padding: 20px 0;
+
+    color: #9792e4;
+}
+
+.benefits-container p {
+    color: #929292;
+    font-weight: 400;
+
+    padding-bottom: 0;
+}
+
+.benefits-container button {
+    background-color: #9792e4;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+    padding: 10px 40px;
 }
 
 
 
+/* About Us */
+.about-us div h2 {
+    color: #9792e4;
+    font-size: 30px;
+
+    padding-bottom: 15px;
+}
 
 .about-us {
     display: flex;
     flex-direction: column;
 }
 
-.about-us div p {
-    padding-bottom: 60px;
+.about-us div {
     text-align: left;
 }
 
+.about-us div p {
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+
+    padding: 15px 0;
+}
 
 .quote {
-    height: 416px;
+    position: relative;
+
+    padding-top: 20px;
+}
+
+.quote .image {
+    height: 120px;
+    width: 120px;
+}
+
+.quote .image img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.quote .fa-quote-left {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+
+    font-size: 40px;
+    color: #9792e4;
+}
+
+.quote .text p {
+    color: #9792e4;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.quote .text button {
+    background-color: #9792e4;
+    color: white;
+    padding: 10px;
+
+    margin-top: 0;
 }
 
 
 
-
+/* Get Started */
 section:nth-child(6) {
     background-color: #9792e4;
 }
 
 .start {
     text-align: center;
+
     padding-bottom: 64px;
 }
 
 .start div {
-    padding: 40px 50px;
+    padding-top: 50px;
+
+    color: white;
 }
 
 .start h2 {
-    padding: 0 50px;
+    padding: 30px 50px;
+
+    color: white;
 }
 
 .start h1 {
-    padding: 40px 0;
+    padding: 0;
+    padding-bottom: 30px;
+
+    color: #fdc15f;
+    font-size: 50px;
 }
 
-.start input {
-    padding: 20px 70px;
+.start p {
+    color: white;
+    font-weight: 400;
+
+    padding: 0px 30px;
+}
+
+.start button {
+    border-radius: 40px;
+
+    padding: 15px 60px;
     margin: 38px 0;
+
+    background-color: white;
+    font-weight: 700;
+    color: #9792e4;
 }
 
 .start .copyright {
-    padding: 0;
+    font-size: 14px;
+    padding: 0 30px;
 }
 
 
+
+/* Footer */
 footer {
     background-color: #333333;
 }
 
 footer p {
     color: white;
+    font-weight: 400;
+    line-height: 1.6em;
+
     text-align: center;
+
     padding: 35px 30px;
+}
+
+footer p a {
+    color: #9792e4;
 }
 
 
@@ -389,25 +525,24 @@ footer p {
         width: calc((100% / 3 * 2) - 24px);
 
         margin-bottom: 0;
-        height: 600px;
+        height: auto;
     }
 
     .app {
         width: calc(100% /3 - 24px);
         margin-bottom: 24px;
 
-
-        height: 400px;
+        height: auto;
     }
 
     .side {
-        height: 600px;
+        height: auto;
+        margin-bottom: 0;
     }
 
     .box {
         display: flex;
         flex-direction: row;
-        height: 276px;
     }
 
     .box .pic {
@@ -421,7 +556,6 @@ footer p {
     }
 
     .benefits {
-
         display: flex;
         flex-direction: row;
 
@@ -437,23 +571,14 @@ footer p {
         flex-direction: row;
     }
 
-    .about-us>div {
-        height: 800px;
-        width: auto;
-
-    }
-
     .about-us .quote {
-        width: 100%;
-        height: 500px;
         padding-left: 60px;
     }
-
-
 }
 
 
 
+/* Desktop */
 @media screen and (min-width:992px) {
     .container {
         max-width: 1200px;
@@ -508,6 +633,4 @@ footer p {
         width: calc(100% / 3 - 30px);
         margin: 15px;
     }
-
-
 }
