@@ -56,6 +56,7 @@ p {
     font-weight: 600;
     color: #5a6e7f;
     line-height: 1.8em;
+    padding-bottom: 20px;
 }
 
 
@@ -99,14 +100,14 @@ p {
 
 .large-app .text h2 {
     text-align: left;
-    padding: 20px 32px;
-    font-size: 18px;
+    padding: 20px 30px;
+    font-size: 20px;
     color: #0084fd;
 }
 
 .large-app .text p {
     text-align: left;
-    padding: 0 32px;
+    padding: 0 30px;
 
 
 }
@@ -131,12 +132,14 @@ button {
 }
 
 .app h2 {
+    font-size: 20px;
     padding: 30px 0;
     color: #0084fd;
 }
 
 .app p {
     padding: 0 30px;
+    padding-bottom: 20px;
 
 }
 
@@ -157,6 +160,7 @@ section:nth-child(2) {
 }
 
 .inner .text h2 {
+    padding: 35px 0;
     font-size: 30px;
     color: white;
 }
@@ -215,33 +219,67 @@ section:nth-child(2) {
 
 }
 
-h2 {
-    padding: 40px 0;
+h1 {
+    color: #9792e4;
+    padding: 35px 0;
+    font-size: 28px;
 }
 
-.container div p {
-    padding-bottom: 20px;
+.container .testimonials p {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    border-radius: 40px;
 
     /*test*/
-    height: 500px;
+    height: auto;
 
     margin: 30px 0;
 
-    background-color: aquamarine;
+    background-color: #9792e4;
 }
 
 .box .pic {
-    height: 40%;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+
+}
+
+.box .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    object-fit: cover;
 }
 
 .box .text {
     height: 60%;
+    padding-top: 30px;
+
 }
+
+.box .text p {
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    padding: 0 15px;
+}
+
+.name {
+    padding: 20px;
+    font-weight: 700;
+    color: white;
+}
+
 
 
 
