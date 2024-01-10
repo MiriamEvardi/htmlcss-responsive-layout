@@ -175,7 +175,7 @@ section:nth-child(2) {
 
 .inner .text p {
     text-align: left;
-
+    font-weight: 400;
     color: white;
 }
 
@@ -385,12 +385,14 @@ section:nth-child(4) .container h2 {
 }
 
 .quote {
-    position: relative;
+
 
     padding-top: 20px;
 }
 
 .quote .image {
+    position: relative;
+
     height: 120px;
     width: 120px;
 }
@@ -406,8 +408,8 @@ section:nth-child(4) .container h2 {
 
 .quote .fa-quote-left {
     position: absolute;
-    top: 5%;
-    left: 35%;
+    top: 0;
+    right: 0;
 
     font-size: 40px;
     color: #9792e4;
@@ -509,8 +511,9 @@ footer p a {
 
 
 /*tablet*/
-@media screen and (min-width:768px) {
+@media screen and (min-width:640px) {
 
+    /* features */
     section:nth-of-type(1) .container {
         padding-right: 6px;
     }
@@ -525,7 +528,34 @@ footer p a {
         width: calc((100% / 3 * 2) - 24px);
 
         margin-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .text,
+    .image {
+        height: 55%;
+    }
+
+    .large-app .text {
         height: auto;
+    }
+
+    .large-app .text button {
+        margin-left: 30px;
+    }
+
+    .large-app .image {
+        margin-top: auto;
+        margin-left: 10px;
+    }
+
+    .large-app .image img {
+        width: auto;
+        margin-right: 100px;
+        height: 100%;
     }
 
     .app {
@@ -540,21 +570,41 @@ footer p a {
         margin-bottom: 0;
     }
 
+
+    /* Strategic planning */
+    .inner .text h2 {
+        text-align: left;
+        font-size: 50px;
+    }
+
+
+    /* testimonials */
+
+    .testimonials h1 {
+        font-size: 35px;
+    }
+
     .box {
         display: flex;
         flex-direction: row;
     }
 
     .box .pic {
-        width: 40%;
-        height: auto;
+        margin-bottom: 30px;
+        margin-left: 30px;
     }
 
     .box .text {
         width: 60%;
         height: auto;
+        padding-top: 0;
+        padding-left: 30px;
+        text-align: left;
     }
 
+
+
+    /* Benefits */
     .benefits {
         display: flex;
         flex-direction: row;
@@ -562,17 +612,44 @@ footer p a {
         flex-wrap: wrap;
     }
 
-    .benefits div {
+    .number {
+        font-size: 50px;
+    }
+
+    .benefits-container {
         width: calc(50% - 30px);
         margin: 15px;
     }
 
+
+    /* about us */
     .about-us {
         flex-direction: row;
+        padding: 0 60px;
     }
 
     .about-us .quote {
-        padding-left: 60px;
+        padding-left: 40px;
+    }
+
+    .about-us div p {
+        line-height: 2.5em;
+    }
+
+    .quote .text button {
+        font-size: 10px;
+    }
+
+
+    /* Get Started */
+    .start p {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    /* footer */
+    footer div {
+        padding: 0 170px;
     }
 }
 
